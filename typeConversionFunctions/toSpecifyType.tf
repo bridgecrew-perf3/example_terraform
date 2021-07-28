@@ -16,9 +16,10 @@ variable "exampleType" {
 
 locals {
   boolType   = tobool(var.exampleType.boolType)
-  stringType = tostring("this is a string")
-  numberType = tonumber(10)
-  setType    = toset(["a", "b", "c", "c"])
-  listType   = tolist(["a", "b", "c", "c"])
-  mapType    = tomap({ "a" = 1, "b" = 2 })
+  stringType = tostring(var.exampleType.stringType)
+  numberType = tonumber(var.exampleType.numberType)
+  setType    = toset(var.exampleType.setType)
+  listType   = tolist(var.exampleType.listType)
+  mapType    = tomap(var.exampleType.mapType)
+  outall = var.exampleType
 }

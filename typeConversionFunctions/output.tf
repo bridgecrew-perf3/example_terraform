@@ -17,3 +17,7 @@
 # output "sensitiveResult" {
 #   value = nonsensitive(local.sensitiveData)
 # }
+
+output "outResult" {
+  value = local.outall
+}

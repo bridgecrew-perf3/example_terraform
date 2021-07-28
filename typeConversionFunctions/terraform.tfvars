@@ -30,17 +30,17 @@ sensitiveData = "This is an sensitive string"
 
 exampleType = {
   boolType = false
-  listType = [ "a","b","c" ]
+  listType = [ "a","b","c","c" ]
   mapType = {
     "anykey" = {
-      a = "value"
-      b = "value"
+      a = "value1"
+      b = "value2"
     }
   }
   numberType = 1
-  setType = [ "value" ]
-  stringType = "value"
-  tupleType = ["value",12,true]
+  setType = [ "a","b","c","c" ]
+  stringType = "this is a string"
+  tupleType = ["string",12,true]
   realMap = {
     key1 = "value1"
     key2 = 12
