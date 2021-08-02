@@ -1,4 +1,4 @@
-module charlesguo404/example_terraform
+module charlesguo404/example_terraform/test
 
 go 1.16
 
