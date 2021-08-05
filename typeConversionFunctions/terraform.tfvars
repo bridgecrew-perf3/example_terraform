@@ -27,22 +27,3 @@ toStringOrList = ["string1","string2",12]
 
 mixed_content_json = "{\"username\": \"zqb\",\"password\": \"p4ssw0rd\"}"
 sensitiveData = "This is an sensitive string"
-
-exampleType = {
-  boolType = false
-  listType = [ "a","b","c","c" ]
-  mapType = {
-    "anykey" = {
-      a = "value1"
-      b = "value2"
-    }
-  }
-  numberType = 1
-  setType = [ "a","b","c","c" ]
-  stringType = "this is a string"
-  tupleType = ["string",12,true]
-  realMap = {
-    key1 = "value1"
-    key2 = 12
-  }
-}
