@@ -68,11 +68,6 @@ variable "vpc_id" {
   default = ""
 }
 
-variable "aws_availability_zones" {
-  type    = list(any)
-  default = []
-}
-
 variable "eks_cluster_version" {
   type    = string
   default = ""

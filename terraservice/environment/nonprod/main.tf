@@ -13,12 +13,11 @@ module "vpc" {
 }
 
 module "eks" {
-  source                        = "github.com/charlesguo404/aws-eks?ref=v12.2.0"
+  source                        = "github.com/charlesguo404/aws-eks?ref=v12.2.1"
   cluster_name                  = var.cluster_name
   eks_cluster_version           = var.eks_cluster_version
   environment                   = var.environment
   private_subnets               = module.vpc.private_subnets
-  aws_availability_zones        = module.vpc.aws_availability_zones
   vpc_id                        = module.vpc.vpc_id
   eks_roles                     = var.eks_roles
   eks_users                     = var.eks_users
