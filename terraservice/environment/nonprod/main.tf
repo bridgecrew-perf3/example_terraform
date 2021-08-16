@@ -1,5 +1,5 @@
 module "vpc" {
-  source                 = "github.com/charlesguo404/aws-network"
+  source                 = "github.com/xxx/aws-network"
   vpc_name               = var.vpc_name
   cidr                   = var.cidr
   private_subnets        = var.private_subnets
@@ -13,7 +13,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source                        = "github.com/charlesguo404/aws-eks?ref=v12.2.1"
+  source                        = "github.com/xxx/aws-eks?ref=v12.2.1"
   cluster_name                  = var.cluster_name
   eks_cluster_version           = var.eks_cluster_version
   environment                   = var.environment
@@ -23,3 +23,7 @@ module "eks" {
   eks_users                     = var.eks_users
   worker_groups_launch_template = var.worker_groups_launch_template
 }
+
+# module "cloudfront" {
+#   
+# }
